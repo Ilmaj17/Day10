@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Submit Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename = 'style.css')}}">
+    </head>
+    <body>
+        <div>
+            <form action="/submit-form" method="POST">
+                <!-- Name Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+            <h1>Submitted name: {{n}}</h1>
+        </div>
+    </body>
+</html
